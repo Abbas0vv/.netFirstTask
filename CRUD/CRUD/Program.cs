@@ -1,21 +1,20 @@
-namespace CRUD
+namespace CRUD;
+
+public class Program
 {
-    public class Program
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
+        var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services
-                .AddControllersWithViews();
+        builder.Services
+            .AddControllersWithViews();
 
-            var app = builder.Build();
+        var app = builder.Build();
 
-            app.UseStaticFiles();
+        app.UseStaticFiles();
 
-            app.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+        app.MapControllerRoute("default", "{controller=Home}/{action=Index}");
 
-            app.Run();
-        }
+        app.Run();
     }
 }

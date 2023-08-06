@@ -7,9 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Database\Models\" />
     <Folder Include="Database\Repositories\" />
+    <Folder Include="wwwroot\assets\" />
   </ItemGroup>
 
   <ItemGroup>
