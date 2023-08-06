@@ -2,6 +2,71 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-<h1>View</h1>
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
 
+        .slider-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .slider-content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            color: #fff;
+        }
+
+        .slider-title {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .slider-description {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .slider-button {
+            padding: 8px 16px;
+            background-color: #3498db;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <img src="assets/images/imagesForTask/slider.jpg" alt="Slider Image" class="slider-image">
+        <div class="slider-content">
+            <h2 class="slider-title">Title</h2>
+            <p class="slider-description">Description</p>
+            <button class="slider-button">Button</button>
+        </div>
+    </div>
+</body>
+</html>

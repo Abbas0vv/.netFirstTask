@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\CRUDadmin\Data\" />
+    <Folder Include="Areas\CRUDadmin\Models\" />
+    <Folder Include="Areas\CRUDadmin\Views\" />
     <Folder Include="Database\Repositories\" />
-    <Folder Include="wwwroot\assets\" />
+    <Folder Include="wwwroot\assets\images\imagesForTask\" />
   </ItemGroup>
 
   <ItemGroup>

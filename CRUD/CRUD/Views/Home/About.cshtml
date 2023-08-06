@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resimli Web Sitesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #888;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <img class="image" src="resim-url" alt="Fotograf">
+            <h1 class="title">Başlık</h1>
+            <p class="description">Açıklama metni burada yer alacak.</p>
+        </div>
+    </div>
+</body>
+</html>
+
